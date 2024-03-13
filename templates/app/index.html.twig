@@ -1,0 +1,82 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AppController!{% endblock %}
+
+{#<script src="js/idb-promised.js"></script>#}
+{#<script src="js/main.js"></script>#}
+
+{% block body %}  <header>
+    <ul class="navbar">
+      <li><a class="home" href="#home"><h2>Dashboardr</h2></a></li>
+      <li><img class="profile" src="{{ asset('/images/profile/cat.jpg') }}" alt="An adorable cat" /></li>
+    </ul>
+  </header>
+
+  <main>
+
+    <section>
+
+      <h2>Current Events</h2>
+
+      <!-- hidden warnings are displayed dynamically -->
+      <p id="offline" class="message warn">You're offline and viewing stored data.</p>
+      <p id="no-data" class="message error">You're offline and local data is unavailable.</p>
+      <p id="data-saved" class="message success">Server data was saved for offline mode</p>
+      <p id="save-error" class="message error">Server data couldn't be saved offline :(</p>
+
+      <ul id="container" class="container">
+        <!-- items dynamically populated -->
+      </ul>
+
+    </section>
+
+    <section class="form-section">
+
+      <div class="card">
+        <div class="card-title">
+          <h2>Add an Event</h2>
+        </div>
+        <div class="support-text">
+          <form action="#" method="post">
+            <div class="textfield">
+              <label for="title">Title</label>
+              <input id="title" name="title"/>
+            </div>
+            <div class="textfield">
+              <label for="date">Date</label>
+              <input id="date" type="date" name="date"/>
+            </div>
+            <div class="textfield">
+              <label for="city">City</label>
+              <input id="city" name="city"/>
+            </div>
+            <div class="textfield">
+              <label for="note">Note</label>
+              <input id="note" name="note"/>
+            </div>
+            <div class="card-action">
+              <button id="add-event-button" type="submit" class="raised button ripple">
+                Add
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+    <ul class="social">
+      <li><a href="#" class="social-link">Twitter</a></li>
+      <li><a href="#" class="social-link">Facebook</a></li>
+      <li><a href="#" class="social-link">Google+</a></li>
+      <li><a href="#" class="social-link">Digg</a></li>
+    </ul>
+
+  </footer>
+
+
+{% endblock %}
