@@ -7,5 +7,8 @@ import './bootstrap.js';
  */
 import './styles/app.css';
 import './styles/main.css';
+// import '/manifest.json;
+import './js/idb-promised.js'
 
+import './js/main.js';
 console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉');
