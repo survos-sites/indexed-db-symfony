@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0ea40e77c07ea586d768c874d304b5c5",
+    "content-hash": "f64b8b7118260df23a57ccea3ca746d4",
     "packages": [
         {
             "name": "composer/semver",
@@ -1993,6 +1993,264 @@
                 "source": "https://github.com/php-fig/log/tree/3.0.0"
             },
             "time": "2021-07-14T16:46:02+00:00"
+        },
+        {
+            "name": "spomky-labs/pwa-bundle",
+            "version": "1.1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Spomky-Labs/pwa-bundle.git",
+                "reference": "990500809ce7f1997ada204854787fb4fe7f8548"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Spomky-Labs/pwa-bundle/zipball/990500809ce7f1997ada204854787fb4fe7f8548",
+                "reference": "990500809ce7f1997ada204854787fb4fe7f8548",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.2",
+                "phpdocumentor/reflection-docblock": "^5.3",
+                "symfony/asset-mapper": "^6.4|^7.0",
+                "symfony/config": "^6.4|^7.0",
+                "symfony/dependency-injection": "^6.4|^7.0",
+                "symfony/http-kernel": "^6.4|^7.0",
+                "symfony/property-access": "^6.4|^7.0",
+                "symfony/property-info": "^6.4|^7.0",
+                "symfony/routing": "^6.4|^7.0",
+                "symfony/serializer": "^6.4|^7.0",
+                "twig/twig": "^3.8"
+            },
+            "require-dev": {
+                "dbrekelmans/bdi": "^1.1",
+                "infection/infection": "^0.27",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan": "^1.0",
+                "phpstan/phpstan-beberlei-assert": "^1.0",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "phpstan/phpstan-strict-rules": "^1.0",
+                "phpunit/phpunit": "^10.0",
+                "rector/rector": "^1.0",
+                "symfony/filesystem": "^6.4|^7.0",
+                "symfony/framework-bundle": "^6.4|^7.0",
+                "symfony/mime": "^6.4|^7.0",
+                "symfony/panther": "^2.1",
+                "symfony/phpunit-bridge": "^6.4|^7.0",
+                "symfony/translation": "^7.0",
+                "symfony/yaml": "^6.4|^7.0",
+                "symplify/easy-coding-standard": "^12.0"
+            },
+            "suggest": {
+                "ext-gd": "Required to generate icons (or Imagick).",
+                "ext-imagick": "Required to generate icons (or GD).",
+                "symfony/filesystem": "For generating and manipulating icons or screenshots",
+                "symfony/mime": "For generating and manipulating icons or screenshots",
+                "symfony/panther": "For generating screenshots directly from your application"
+            },
+            "default-branch": true,
+            "type": "symfony-bundle",
+            "extra": {
+                "thanks": {
+                    "name": "spomky-labs/pwa-bundle",
+                    "url": "https://github.com/spomky-labs/pwa-bundle"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SpomkyLabs\\PwaBundle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Florent Morselli",
+                    "homepage": "https://github.com/Spomky"
+                },
+                {
+                    "name": "All contributors",
+                    "homepage": "https://github.com/spomky-labs/pwa-bundle/contributors"
+                }
+            ],
+            "description": "Progressive Web App Manifest Generator Bundle for Symfony.",
+            "homepage": "https://github.com/spomky-labs",
+            "keywords": [
+                "bundle",
+                "pwa",
+                "symfony",
+                "symfony-ux"
+            ],
+            "support": {
+                "issues": "https://github.com/Spomky-Labs/pwa-bundle/issues",
+                "source": "https://github.com/Spomky-Labs/pwa-bundle/tree/1.1.x"
+            },
+            "funding": [
+                {
+                    "url": "https://www.buymeacoffee.com/FlorentMorselli",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/Spomky",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/FlorentMorselli",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2024-03-09T17:09:06+00:00"
+        },
+        {
+            "name": "survos/core-bundle",
+            "version": "1.5.183",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/survos/SurvosCoreBundle.git",
+                "reference": "9884289cb72169fe45d9aec5714c9a27a1849a24"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/survos/SurvosCoreBundle/zipball/9884289cb72169fe45d9aec5714c9a27a1849a24",
+                "reference": "9884289cb72169fe45d9aec5714c9a27a1849a24",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1",
+                "symfony/config": "^6.4 || ^7.0",
+                "symfony/dependency-injection": "^6.4 || ^7.0",
+                "symfony/http-kernel": "^6.4 || ^7.0",
+                "symfony/serializer": "^6.4 || ^7.0",
+                "symfony/string": "^6.4 || ^7.0",
+                "twig/twig": "^3.4"
+            },
+            "conflict": {
+                "survos/api-grid-bundle": "<1.2.57",
+                "survos/auth-bundle": "<1.2.57",
+                "survos/barcode-bundle": "<1.2.57",
+                "survos/bootstrap-bundle": "<1.2.57",
+                "survos/command-bundle": "<1.2.57",
+                "survos/crawler-bundle": "<1.2.57",
+                "survos/doc-bundle": "<1.2.57",
+                "survos/faker-bundle": "<1.2.57",
+                "survos/grid-bundle": "<1.2.57",
+                "survos/grid-group-bundle": "<1.2.57",
+                "survos/html-prettify-bundle": "<1.2.57",
+                "survos/import-bridge": "<1.2.57",
+                "survos/inspection-bundle": "<1.2.57",
+                "survos/location-bundle": "<1.2.57",
+                "survos/maker-bundle": "<1.2.57",
+                "survos/providence-bundle": "<1.2.57",
+                "survos/ruler-bundle": "<1.2.57",
+                "survos/stripe-product": "<1.2.57",
+                "survos/tree-bundle": "<1.2.57",
+                "survos/wiki-bundle": "<1.2.57",
+                "survos/workflow-helper-bundle": "<1.2.57"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^1.10",
+                "symfony/browser-kit": "^6.4 || ^7.0",
+                "symfony/framework-bundle": "^6.4 || ^7.0",
+                "symfony/phpunit-bridge": "^6.4 || ^7.0",
+                "symfony/twig-bundle": "^6.4 || ^7.0",
+                "symfony/var-dumper": "^6.4 || ^7.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.6-dev"
+                },
+                "symfony": {
+                    "require": "^6.4 || ^7.0"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Survos\\CoreBundle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Traits and Interfaces common to other Survos bundles",
+            "keywords": [
+                "symfony6"
+            ],
+            "support": {
+                "issues": "https://github.com/survos/SurvosCoreBundle/issues",
+                "source": "https://github.com/survos/SurvosCoreBundle/tree/1.5.183"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/kbond",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-03-05T19:16:42+00:00"
+        },
+        {
+            "name": "survos/pwa-extra-bundle",
+            "version": "1.5.183",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/survos/SurvosPwaExtraBundle.git",
+                "reference": "f25ea23b33fc3c7e2d4e44f2ad929d53781e8781"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/survos/SurvosPwaExtraBundle/zipball/f25ea23b33fc3c7e2d4e44f2ad929d53781e8781",
+                "reference": "f25ea23b33fc3c7e2d4e44f2ad929d53781e8781",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1",
+                "spomky-labs/pwa-bundle": "^1.1",
+                "survos/core-bundle": "^1.5.183",
+                "symfony/asset-mapper": "^6.4 || ^7.0",
+                "symfony/config": "^6.4 || ^7.0",
+                "symfony/dependency-injection": "^6.4 || ^7.0",
+                "symfony/http-kernel": "^6.4 || ^7.0",
+                "twig/twig": "^3.4"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^1.10",
+                "symfony/browser-kit": "^6.4 || ^7.0",
+                "symfony/framework-bundle": "^6.4 || ^7.0",
+                "symfony/phpunit-bridge": "^6.4 || ^7.0",
+                "symfony/twig-bundle": "^6.4 || ^7.0",
+                "symfony/var-dumper": "^6.4 || ^7.0",
+                "zenstruck/console-extra": "^1.4"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Survos\\PwaExtraBundle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Extra tools for https://github.com/Spomky-Labs/phpwa",
+            "keywords": [
+                "pwa",
+                "symfony",
+                "symfony-ux"
+            ],
+            "support": {
+                "issues": "https://github.com/survos/SurvosPwaExtraBundle/issues",
+                "source": "https://github.com/survos/SurvosPwaExtraBundle/tree/1.5.183"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/kbond",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-03-13T12:50:04+00:00"
         },
         {
             "name": "symfony/asset",
@@ -9696,14 +9954,15 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": ">=8.2",
         "ext-ctype": "*",
-        "ext-iconv": "*"
+        "ext-iconv": "*",
+        "ext-imagick": "*"
     },
     "platform-dev": [],
     "plugin-api-version": "2.6.0"

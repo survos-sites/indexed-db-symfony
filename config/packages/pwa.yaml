@@ -1,0 +1,94 @@
+pwa:
+    image_processor: 'pwa.image_processor.imagick'
+    manifest:
+        enabled: true
+        background_color: "#c026d3"
+        theme_color: "#c026d3"
+        name: 'IndexedDB Demo'
+        short_name: 'indexed-db'
+        description: 'Symfony-based PWA integrated IndexedDB'
+        orientation: "any"
+        display: "standalone"
+        scope: "/"
+        display_override: ['fullscreen', 'minimal-ui', 'window-controls-overlay']
+        id: "/"
+        start_url: "/"
+        icons:
+          - src: icons/icon-16x16.png
+            sizes:
+              - 16
+            type: image/png
+          - src: icons/icon-32x32.png
+            sizes:
+              - 32
+            type: image/png
+          - src: icons/icon-48x48.png
+            sizes:
+              - 48
+            type: image/png
+          - src: icons/icon-96x96.png
+            sizes:
+              - 96
+            type: image/png
+          - src: icons/icon-144x144.png
+            sizes:
+              - 144
+            type: image/png
+          - src: icons/icon-180x180.png
+            sizes:
+              - 180
+            type: image/png
+          - src: icons/icon-256x256.png
+            sizes:
+              - 256
+            type: image/png
+          - src: icons/icon-512x512.png
+            sizes:
+              - 512
+            type: image/png
+          - src: icons/icon-1024x1024.png
+            sizes:
+              - 1024
+            type: image/png
+        screenshots:
+        categories: []
+        shortcuts: []
+        edge_side_panel:
+            preferred_width: 280
+        widgets: []
+        related_applications:
+            - platform: "webapp"
+              url: "https://localhost/site.webmanifest"
+    serviceworker:
+        enabled: true
+        src: "sw.js"
+        skip_waiting: true
+        workbox:
+            page_caches:
+                  - cache_name: page_cache
+                    regex: "/$"
+                    strategy: 'staleWhileRevalidate'
+                    broadcast: true
+                    broadcast_headers:
+                        - 'X-App-Cache'
+                    urls:
+                    - 'app_homepage'
+                  - cache_name: pages
+                    regex: "/api"
+                    strategy: 'cacheFirst'
+                    broadcast: true
+                    broadcast_headers:
+                        - 'X-App-Cache'
+                    urls:
+#                        - 'api_doc'
+#                        - '_api_/items{._format}_get_collection'
+            offline_fallback:
+                page: 'app_homepage'
+            background_sync:
+                - queue_name: 'items'
+                  regex: '\/items\/.*$'
+                  broadcast_channel: 'items-sync'
+                - queue_name: 'add'
+                  regex: '\/add$'
+                  method: POST
+                  broadcast_channel: 'add-item'
