@@ -64,31 +64,31 @@ pwa:
         src: "sw.js"
         skip_waiting: true
         workbox:
-            page_caches:
-                  - cache_name: page_cache
-                    regex: "/$"
-                    strategy: 'staleWhileRevalidate'
-                    broadcast: true
-                    broadcast_headers:
-                        - 'X-App-Cache'
-                    urls:
-                    - 'app_homepage'
-                  - cache_name: pages
-                    regex: "/api"
-                    strategy: 'cacheFirst'
-                    broadcast: true
-                    broadcast_headers:
-                        - 'X-App-Cache'
-                    urls:
-#                        - 'api_doc'
-#                        - '_api_/items{._format}_get_collection'
+#            page_caches:
+#                  - cache_name: page_cache
+#                    regex: "/$"
+#                    strategy: 'staleWhileRevalidate'
+#                    broadcast: true
+#                    broadcast_headers:
+#                        - 'X-App-Cache'
+#                    urls:
+#                    - 'app_homepage'
+#                  - cache_name: pages
+#                    regex: "/api"
+#                    strategy: 'cacheFirst'
+#                    broadcast: true
+#                    broadcast_headers:
+#                        - 'X-App-Cache'
+#                    urls:
+##                        - 'api_doc'
+##                        - '_api_/items{._format}_get_collection'
             offline_fallback:
                 page: 'app_homepage'
-            background_sync:
-                - queue_name: 'items'
-                  regex: '\/items\/.*$'
-                  broadcast_channel: 'items-sync'
-                - queue_name: 'add'
-                  regex: '\/add$'
-                  method: POST
-                  broadcast_channel: 'add-item'
+#            background_sync:
+#                - queue_name: 'items'
+#                  regex: '\/items\/.*$'
+#                  broadcast_channel: 'items-sync'
+#                - queue_name: 'add'
+#                  regex: '\/add$'
+#                  method: POST
+#                  broadcast_channel: 'add-item'

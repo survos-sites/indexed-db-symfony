@@ -1,6 +1,7 @@
 # About this Fork
 
-This is the codebase for the tutorial at https://developers.google.com/codelabs/pwa-training/pwa03--going-offline#0, but instead of using node for the server, it uses Symfony and spmoky-labs/pwa-bundle
+This is the codebase for the tutorial at https://developers.google.com/codelabs/pwa-training/pwa03--going-offline#0, 
+but instead of using node for the server, it uses Symfony and spomky-labs/pwa-bundle
 
 In addition to using generated sw.js and manifest files, the api call to get events comes from the server, and could come from a database.  An exercise would be to keep the postgres database and client in sync.
 
